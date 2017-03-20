@@ -1,0 +1,2 @@
+module Publico::ProdutosHelper
+end

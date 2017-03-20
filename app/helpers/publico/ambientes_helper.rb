@@ -1,0 +1,2 @@
+module Publico::AmbientesHelper
+end

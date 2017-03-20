@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Publico Empresas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @publico_empresas.each do |publico_empresa| %>
+      <tr>
+        <td><%= publico_empresa.nome %></td>
+        <td><%= publico_empresa.descricao %></td>
+        <td><%= link_to 'Show', publico_empresa %></td>
+        <td><%= link_to 'Edit', edit_publico_empresa_path(publico_empresa) %></td>
+        <td><%= link_to 'Destroy', publico_empresa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Publico Empresa', new_publico_empresa_path %>

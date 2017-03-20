@@ -1,0 +1,1 @@
+json.partial! "publico_ambientes/publico_ambiente", publico_ambiente: @publico_ambiente

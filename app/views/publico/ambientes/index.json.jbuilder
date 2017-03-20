@@ -1,0 +1,1 @@
+json.array! @publico_ambientes, partial: 'publico_ambientes/publico_ambiente', as: :publico_ambiente

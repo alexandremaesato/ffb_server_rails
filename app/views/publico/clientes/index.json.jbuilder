@@ -1,0 +1,1 @@
+json.array! @publico_clientes, partial: 'publico_clientes/publico_cliente', as: :publico_cliente

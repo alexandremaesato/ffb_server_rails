@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @publico_empresa.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @publico_empresa.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_publico_empresa_path(@publico_empresa) %> |
+<%= link_to 'Back', publico_empresas_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @publico_cliente.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @publico_cliente.descricao %>
+</p>
+
+<p>
+  <strong>Aniversario:</strong>
+  <%= @publico_cliente.aniversario %>
+</p>
+
+<%= link_to 'Edit', edit_publico_cliente_path(@publico_cliente) %> |
+<%= link_to 'Back', publico_clientes_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Publico Ambientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @publico_ambientes.each do |publico_ambiente| %>
+      <tr>
+        <td><%= publico_ambiente.nome %></td>
+        <td><%= publico_ambiente.descricao %></td>
+        <td><%= link_to 'Show', publico_ambiente %></td>
+        <td><%= link_to 'Edit', edit_publico_ambiente_path(publico_ambiente) %></td>
+        <td><%= link_to 'Destroy', publico_ambiente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Publico Ambiente', new_publico_ambiente_path %>

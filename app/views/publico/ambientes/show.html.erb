@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @publico_ambiente.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @publico_ambiente.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_publico_ambiente_path(@publico_ambiente) %> |
+<%= link_to 'Back', publico_ambientes_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @favorito.cliente_id %>
+</p>
+
+<p>
+  <strong>Favoritado:</strong>
+  <%= @favorito.favoritado_id %>
+</p>
+
+<p>
+  <strong>Tipo favoritado:</strong>
+  <%= @favorito.tipo_favoritado %>
+</p>
+
+<p>
+  <strong>Checked:</strong>
+  <%= @favorito.checked %>
+</p>
+
+<%= link_to 'Edit', edit_favorito_path(@favorito) %> |
+<%= link_to 'Back', favoritos_path %>

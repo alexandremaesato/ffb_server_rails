@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @publico_produto.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @publico_produto.descricao %>
+</p>
+
+<p>
+  <strong>Imagens:</strong>
+  <% @publico_produto.fotos.each do |foto| %>
+  <%= image_tag foto.url %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_publico_produto_path(@publico_produto) %> |
+<%= link_to 'Back', publico_produtos_path %>
